@@ -1,0 +1,219 @@
+h1 {
+font-size: 40px;
+color: black;
+font-family: "Avenir Next", "Avenir", sans-serif;
+margin-right: 10px;
+margin-top: auto;
+text-align: right;
+padding-top: 0px;
+
+}
+
+p{
+color: black;
+font-family: "Avenir Next", "Avenir", sans-serif;
+font-size: 18px;
+
+}
+
+
+.column {
+  margin-top: 40px;
+  float: right;
+  width: 33.33%;
+
+  font-size: 18px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table-cell;
+  clear: both;
+}
+
+h3{
+  color: black;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+
+}
+body
+{
+  margin: 0;
+  padding: 0;
+
+  /* make it look decent enough */
+  background: #00000;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+a
+{
+  text-decoration: none;
+  color: #232323;
+
+
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  text-decoration: inherit;
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #232323;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 400px;
+  height: 910px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: white;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 32px;
+  text-align: center;
+  padding: 30px;
+
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+
+}
+
+section {
+  font-size: 20px;
+  color: black;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  margin-right: 50px;
+  margin-top: auto;
+
+}
+
+html {
+ images: url('../images/vives6.jpg')
+position: relative;
+margin-top: 50px;
+margin-left: 50px;
+margin-right: 50px;
+image-size: 20px 80px;
+}

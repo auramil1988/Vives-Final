@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Vives</title>
+<link rel="stylesheet" href="./assets/stylesheets/styles.css"/>
+
+<head>
+<style>
+  h1{
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    top:50%;
+    bottom: 50%;
+    left:0;
+    right:0;
+    margin: auto;
+    text-align: center;
+    font-size: 200px;
+  }
+  .wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* background: black; */
+    background: rgba(0,0,0,.5);
+
+  }
+</style>
+<body>
+
+<div class ="wrapper">
+
+  <h1>Carlos Vives
+  </div>
+
+  </h1>
+
+</body>
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+
+    <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="about.html"><li>Vives</li></a>
+      <a href="discography.html"><li>Discography</li></a>
+      <a href="#"><li>Media</li></a>
+      <a href="#"><li>Shop</li></a>
+      <a href="#"><li>Tour</li></a>
+      <!-- <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a> -->
+    </ul>
+  </div>
+</nav>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Vives</title>
+<link rel="stylesheet" href="./assets/stylesheets/discographystyles.css"/>
+
+<head>
+
+<header>
+
+<div class ="wrapper">
+
+  <h1>Discography
+      </h1>
+  </div>
+
+
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+
+    <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Vives</li></a>
+      <a href="#"><li>Discography</li></a>
+      <a href="#"><li>Media</li></a>
+      <a href="#"><li>Shop</li></a>
+      <a href="#"><li>Tour</li></a>
+      <!-- <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a> -->
+    </ul>
+  </div>
+</nav>
+
+</header>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="row">
+  <div class="column">
+
+    <img src="./assets/images/vives7.png" alt="Vives" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./assets/images/vives8.jpg" alt="La Tierra del Olvido" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./assets/images/vives9.jpg" alt="Corazon Profundo" style="width:100%">
+  </div>
+</div>
+</body>
+<!-- <body>
+
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./assets/images/vives7.png" alt="Avatar" />
+    </div>
+    <div class="flip-card-back">
+      <iframe src="https://open.spotify.com/embed/artist/4vhNDa5ycK0ST968ek7kRr" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+    </div>
+  </div>
+</div>
+ -->
+
+
+
+</html>
